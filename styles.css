@@ -25,7 +25,14 @@ body {
 
 /* Estilos para enlaces de navegación */
 .nav-link {
-    @apply hover:text-yellow-200 transition duration-300 font-medium flex items-center;
+    transition: all 0.3s;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link:hover {
+    color: #fef08a;
 }
 
 /* Efectos de hover para tarjetas */
@@ -49,19 +56,27 @@ body {
 
 /* Estilos para etiquetas de estado */
 .status-lost {
-    @apply bg-red-100 text-red-800 border-l-4 border-red-500;
+    background-color: #fef2f2;
+    color: #991b1b;
+    border-left: 4px solid #ef4444;
 }
 
 .status-adoption {
-    @apply bg-green-100 text-green-800 border-l-4 border-green-500;
+    background-color: #dcfce7;
+    color: #166534;
+    border-left: 4px solid #22c55e;
 }
 
 .status-vet {
-    @apply bg-purple-100 text-purple-800 border-l-4 border-purple-500;
+    background-color: #faf5ff;
+    color: #6b21a8;
+    border-left: 4px solid #a855f7;
 }
 
 .status-product {
-    @apply bg-orange-100 text-orange-800 border-l-4 border-orange-500;
+    background-color: #fff7ed;
+    color: #9a3412;
+    border-left: 4px solid #f97316;
 }
 
 /* Efectos de scroll suave */
